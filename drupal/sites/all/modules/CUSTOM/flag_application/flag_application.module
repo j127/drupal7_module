@@ -3,7 +3,7 @@
 /**
  * Implements hook_flag_default_flags
  */
-function hook_flag_default_flags()
+function flag_application_flag_default_flags()
 {
     $flags = [];
     // Exported flag: "Flag Application".
