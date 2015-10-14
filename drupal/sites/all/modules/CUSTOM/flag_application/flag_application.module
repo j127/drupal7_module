@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Implements hook_flag_default_flags
+ */
+function hook_flag_default_flags()
+{
+    $flags = [];
+    // Exported flag: "Flag Application".
+    $flags['flag_application'] = [
+        'entity_type' => 'node',
+        'title' => 'Flag Application',
+        'global' => '0',
+        'types' => [],
+        'flag_short' => 'Apply',
+        'flag_long' => 'Apply for this',
+        'flag_message' => 'Thanks for applying',
+        'unflag_short' => 'Remove your application',
+        'unflag_long' => 'Remove your application for this from the site',
+        'unflag_message' => 'Your application has been removed',
+        'unflag_denied_text' => '',
+        'link_type' => 'toggle',
+        'weight' => 0,
+        'show_in_links' => 
+        [
+            'full' => 'full',
+            'teaser' => 0,
+            'rss' => 0,
+            'search_index' => 0,
+            'search_result' => 0,
+        ],
+        'show_as_field' => 1,
+        'show_on_form' => 0,
+        'access_author' => '',
+        'show_contextual_link' => 0,
+        'i18n' => 0,
+        'api_version' => 3,
+    ];
+    return $flags;
+}
+
