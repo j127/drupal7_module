@@ -1,0 +1,6 @@
+name = Flag Application
+description = Flag entities and have an adminstrator review and approval.
+dependencies[] = flag (3.x)
+core = 7.x
+package = Flags
+
